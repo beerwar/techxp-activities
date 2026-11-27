@@ -51,3 +51,15 @@ footer {
 .btn:hover {
     background-color: #027a4e;
 }
+
+#main p {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+#main p.green-text {
+    color: green;
+}
