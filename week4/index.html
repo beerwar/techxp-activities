@@ -10,13 +10,20 @@
 </head>
 <body>
 
-    <header>
-        <h1>Week 4: CSS Fundamentals</h1>
-        <p>Learning how CSS changes the appearance of HTML.</p>
+    <header class="navbar">
+        <div class="logo">
+            Week 4: CSS Fundamentals
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#learning">What I'm Learning</a>
+            <a href="#card">Card</a>
+        </nav>
     </header>
 
     <main id="main">
-        <section>
+        <section id="home">
             <h2>What is CSS?</h2>
             <p class="green-text">
                 CSS stands for Cascading Style Sheets. It controls
@@ -29,7 +36,7 @@
             </p>
         </section>
 
-        <section>
+        <section id="learning">
             <h2>What I Am Learning</h2>
             <ul>
                 <li>CSS selectors</li>
@@ -40,7 +47,7 @@
         </section>
 
 
-        <section>
+        <section id="card">
             <h2>Card Component</h2>
 
             <div class="card">

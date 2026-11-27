@@ -63,3 +63,25 @@ p {
 #main p.green-text {
     color: green;
 }
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: var(--brand);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #027a4e;
+}
