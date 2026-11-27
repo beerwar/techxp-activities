@@ -33,7 +33,7 @@ footer {
 
 
 .card {
-    width: 320px;
+    width: auto;
     padding: 1rem;
     border: 1px solid #cccccc;
     border-radius: var(--radius);
@@ -84,4 +84,10 @@ p {
 
 .navbar a:hover {
     color: #027a4e;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
