@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwata Pares - Order Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Diwata Pares</h1>
+        <p>Place your order here!</p>
+    </header>
+
+    <main>
+        <h2>Food Order Form</h2>
+
+        <form action="" method="get">
+
+            <label for="fullname">Full Name:</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                minlength="2"
+                maxlength="120"
+            >
+
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="09[0-9]{9}"
+                title="Enter an 11-digit Philippine mobile number starting with 09."
+                required
+            >
+
+            <br><br>
+
+            <fieldset>
+                <legend>Serving Size</legend>
+
+                <input
+                    type="radio"
+                    id="solo"
+                    name="size"
+                    value="solo"
+                    required
+                >
+                <label for="solo">Solo</label>
+
+                <br>
+
+                <input
+                    type="radio"
+                    id="sharing"
+                    name="size"
+                    value="sharing"
+                >
+                <label for="sharing">Good for Sharing</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Extra Add-ons</legend>
+
+                <input
+                    type="checkbox"
+                    id="egg"
+                    name="extras[]"
+                    value="extra-egg"
+                >
+                <label for="egg">Extra Egg</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="rice"
+                    name="extras[]"
+                    value="extra-rice"
+                >
+                <label for="rice">Extra Rice</label>
+            </fieldset>
+
+            <br>
+
+            <label for="pickup">Pickup Time:</label>
+            <select id="pickup" name="pickup" required>
+                <option value="">Choose a time...</option>
+                <option value="11:30">11:30 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="12:30">12:30 PM</option>
+                <option value="13:00">1:00 PM</option>
+            </select>
+
+            <br><br>
+
+            <label for="notes">Special Requests:</label>
+            <br>
+            <textarea
+                id="notes"
+                name="notes"
+                rows="4"
+                cols="40"
+            ></textarea>
+
+            <br><br>
+
+            <button type="submit">Place Order</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Student HTML project for educational purposes.</p>
+    </footer>
+
+</body>
+</html>
