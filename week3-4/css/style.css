@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+article {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
