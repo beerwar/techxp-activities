@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+    <h1>Contact Me</h1>
+
+    <form method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <fieldset>
+            <legend>Preferred Contact Method</legend>
+
+            <input type="radio" id="contact_email" name="contact_method" value="email">
+            <label for="contact_email">Email</label>
+
+            <input type="radio" id="contact_phone" name="contact_method" value="phone">
+            <label for="contact_phone">Phone</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>My Interests:</legend>
+
+            <input type="checkbox" id="html" name="interests[]" value="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="interests[]" value="css">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="javascript" name="interests[]" value="javascript">
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+
+        <label for="topic">What would you like to discuss?</label>
+        <select id="topic" name="topic">
+            <option value="">Choose a topic...</option>
+            <option value="web-development">Web Development</option>
+            <option value="networking">Computer Networking</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <section>
+        <h2>My Learning Progress</h2>
+
+        <table>
+            <caption>Web Development Skills</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Skill</th>
+                    <th scope="col">Level</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">HTML</th>
+                    <td>Beginner</td>
+                    <td>Learning</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">CSS</th>
+                    <td>Beginner</td>
+                    <td>Learning</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">JavaScript</th>
+                    <td>Beginner</td>
+                    <td>Planned</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Computer Networking</th>
+                    <td>Intermediate</td>
+                    <td>Learning</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Git</th>
+                    <td>Beginner</td>
+                    <td>Learning</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+</body>
+</html>

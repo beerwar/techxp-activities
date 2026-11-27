@@ -37,3 +37,57 @@ article {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* Contact form */
+
+form {
+    max-width: 600px;
+    margin: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input:not([type="radio"]):not([type="checkbox"]),
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+}
+
+form fieldset {
+    margin: 15px 0;
+    padding: 15px;
+}
+
+form fieldset label {
+    display: inline;
+}
+
+form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* Data table */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+caption {
+    padding: 10px;
+    font-weight: bold;
+}
