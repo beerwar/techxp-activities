@@ -1,0 +1,32 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --brand: #04AA6D;
+    --radius: 8px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #25292e;
+}
+
+h1 {
+    color: var(--brand);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    border-top: 1px solid #cccccc;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
