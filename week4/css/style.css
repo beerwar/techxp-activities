@@ -30,3 +30,24 @@ footer {
     margin-top: 2rem;
     padding-top: 1rem;
 }
+
+
+.card {
+    width: 320px;
+    padding: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: var(--radius);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--brand);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #027a4e;
+}
