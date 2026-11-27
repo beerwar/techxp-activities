@@ -1,0 +1,14 @@
+# Secrets
+config.php
+.env
+*.key
+
+# Machine-specific junk
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Student data
+*.sql
+uploads/
+exports/
