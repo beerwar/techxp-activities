@@ -38,3 +38,33 @@ taskList.addEventListener("click", (event) => {
         event.target.remove();
     }
 });
+
+const loadUsersButton = document.querySelector("#loadUsers");
+const status = document.querySelector("#status");
+const userList = document.querySelector("#userList");
+
+loadUsersButton.addEventListener("click", async () => {
+    status.textContent = "Loading users...";
+    userList.textContent = "";
+
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+
+        if (!response.ok) {
+            throw new Error("Failed to load users.");
+        }
+
+        const users = await response.json();
+
+        users.forEach((user) => {
+            const newUser = document.createElement("li");
+            newUser.textContent = user.name;
+
+            userList.appendChild(newUser);
+        });
+
+        status.textContent = "Users loaded successfully!";
+    } catch (error) {
+        status.textContent = "Something went wrong. Please try again.";
+    }
+});
