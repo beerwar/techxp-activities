@@ -82,3 +82,17 @@ const average = (total / classList.length).toFixed(2);
 console.log("Class average:", average);
 
 console.log("Original class list:", classList);
+
+const copy = classList;
+copy[0].score = 100;
+
+console.log("Original after changing copy:", classList);
+// The original changes because copy and classList reference the same array and student objects.
+
+const safeCopy = classList.map(student => ({ ...student }));
+safeCopy[0].score = 95;
+
+console.log("Original after changing safe copy:", classList);
+console.log("Safe copy:", safeCopy);
+
+// const prevents reassignment of the variable, but it does not prevent changes to the array or its contents.
