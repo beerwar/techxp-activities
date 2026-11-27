@@ -27,3 +27,33 @@ console.log(qty == 5); //true
 console.log(qty === 5); //fase
 
 // Use === because it compares both value and data type without implicit conversion.
+
+function transmute(score) {
+    if (score >= 90) {
+        return "Excellent";
+    } else if (score >= 75) {
+        return "Passed";
+    } else {
+        return "Needs improvement";
+    }
+}
+
+const scoresToTest = [95, 88, 75, 74, 0];
+
+for (const score of scoresToTest) {
+    console.log(`Score ${score}: ${transmute(score)}`);
+}
+
+const transmuteArrow = (score) => {
+    if (score >= 90) {
+        return "Excellent";
+    } else if (score >= 75) {
+        return "Passed";
+    } else {
+        return "Needs improvement";
+    }
+};
+
+for (const score of scoresToTest) {
+    console.log(`Score ${score}: ${transmute(score)} | Arrow: ${transmuteArrow(score)}`);
+}
