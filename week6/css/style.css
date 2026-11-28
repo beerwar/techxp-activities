@@ -38,3 +38,14 @@ input {
 #message {
     color: red;
 }
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+li button {
+    padding: 0.4rem 0.7rem;
+}
